@@ -46,9 +46,9 @@ html {
   font-weight: bolder;
   color: #005840;
 }
-.overlay-black {
+.bg-image-overlay{
 
-  background-color: rgba(black, 0.4);
+  background-color: rgba(black, 0.5);
 
 }
 
