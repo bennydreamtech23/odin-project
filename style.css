@@ -191,6 +191,9 @@ html {
   display: block;
   line-height: 1.5rem;
 }
+.button {
+   font-size: 10px;
+}
 }
 
 /*tab landscape orientation*/
@@ -262,7 +265,6 @@ html {
     transform: translateX(50%);
     
 }
-
   100%{
     transform: translateX(100%);
   }
