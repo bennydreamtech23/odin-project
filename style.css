@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    font-size: 15pt;
+    font-family: 'poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+*{
+   margin:0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+.main{
+  background-color:#f0f0f0;
+  height: 100%;
+  width: 100%;
+  padding-top: 100px;
+  z-index: 1;
+}
+
+
+/*....header...*/
+
+.top{
+   position: fixed;
+   top:0;
+   left: 0;
+   background-color:#005840;
+   width: 100%;
+   z-index: 2;
+   font-family: inherit;
+}
+
+/*..hero-section..*/
+.hero-section-details {
+  font-size: 3.1rem;
+  font-family: 'poppins';
+  font-weight: bolder;
+  color: #005840;
+}
+
+.inline-list{
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.inline-list li{
+  display: inline;
+  line-height: 2rem;
+   animation: move 3s ease-in infinite;
+}
+
+@keyframes move{
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/*..recipes..*/
+.recipes {
+   font-family: 'poppins';
+   font-weight: bold;
+   font-size: 2.7rem;
+   letter-spacing: 0.7rem;
+   color: #005840;
+}
+
+.group li{
+   font-size: 10px;  
+   line-height: 1.2rem;
+}
+
+.recipes1 {
+   background-color:#788080;
+   opacity: 0.5rem;
+} 
+ 
+.button {
+   font-size: 5px;
+   border: 5px solid black;
+   border:none;
+   padding: 5px;
+   border-radius: 5px;
+   width: 80px;
+   text-align: center;
+ }
+ 
+ .button.button:hover{
+   background-color: #f8c860;
+   color: black;
+ }
+
+.recipes-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.recipes-details h4{
+  font-size: 1rem;
+}
+
+.recipes2 {
+  background-color:#283030;
+   opacity: 0.5rem;
+}
+
+.recipes3 {
+  background-color:#788080;
+   opacity: 0.5rem;
+}
+
+.recipes4 {
+  background-color:#283030;
+}
+
+.recipes5 {
+  background-color:#788080;
+}
+
+/*video-lessons*/
+ .video-title{
+   font-size: 2.2rem;
+   letter-spacing: 0.5rem;
+   color: #005840;
+   font-weight: bold;
+ }
+ 
+.video{
+  border:0.5rem solid #005840;
+  border-radius: 6px;
+}
+
+/*testimonials*/
+.testimonal-header{
+   font-size: 2.2rem;
+   letter-spacing: 0.5rem;
+   color: #005840;
+   font-weight: bold;
+}
+
+.testimonals-title {
+ font-size: 1.2rem;
+}
+
+.testimonals-details{
+  font-size: 0.8rem;
+}
+
+/*footer*/
+.box2{
+  background-color: #005840;
+  opacity: 0.9;
+}
+
+.box2 h5{
+    font-size: 0.8rem;
+}
+
+ /*media query for mobile*/
+@media only screen and (max-width:768px){
+  html, body {
+    overflow-x:hidden;
+    width:100%; 
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+  width: 100%;
+}
+
+.main{
+  width: 100%;
+}
+
+.inline-list{
+ color: white;
+  
+}
+ 
+.inline-list li{
+  display: block;
+  line-height: 1.5rem;
+}
+}
+
+/*tab landscape orientation*/
+@media only screen and (min-width: 1280px) and (orientation : landscape) {
+  
+  .hero-section-details {
+     margin-top: 10px;
+  }
+  
+   .recipes-img {
+     width:50%;
+   }
+   
+   .recipes5 img{
+     width: 75%;
+   }
+   
+   .button {
+   font-size: 10px;
+   border: 5px solid black;
+   border:none;
+   padding: 5px;
+   border-radius: 5px;
+   width: 80px;
+   text-align: center;
+ }
+   
+   .group li{
+   font-size: 12px;  
+   line-height: 1.2rem;
+}
+
+.recipes5 button{
+  visibility: hidden;
+}
+
+.recipes1 li{
+  font-size: 15px;
+}
+
+.recipes2 li{
+  font-size: 15px;
+}
+
+.recipes3 li{
+  font-size: 15px;
+}
+
+.recipes4 li{
+  font-size: 15px;
+}
+
+.recipes5 li{
+  font-size: 17px;
+}
+
+.inline-list-item{
+  animation: grow 2s linear forwards infinite;
+}
+
+@keyframes grow{
+  0%{
+    color: silver;
+    transform: translateY(0%);
+  }
+  
+  50%{
+    color: darkgrey;
+    transform: translateX(50%);
+    
+}
+
+  100%{
+    transform: translateX(100%);
+  }
+}
+
+}
+
+
