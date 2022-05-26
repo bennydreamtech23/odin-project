@@ -46,6 +46,11 @@ html {
   font-weight: bolder;
   color: #005840;
 }
+.overlay-black {
+
+  background-color: rgba(black, 0.4);
+
+}
 
 .inline-list{
   line-height: 1.5;
